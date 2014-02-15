@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+        Sun And Earth</title>
+    </head>
+    <style>
+html, body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+    
+    /* The universe is black */
+    background-color: black;
+}
+
+#sun {
+    position: absolute;
+    /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+    top: 50%;
+    left: 50%;
+    
+    /* Play with these numbers to see what it does */
+    height: 200px;
+    width: 200px;
+    margin-top: -100px; 
+    margin-left: -100px;
+    border-color:Orange;
+    border-width: 8px;
+    border-style: solid;
+    border-radius:50%;
+    box-shadow:0 0 128px red;
+}
+
+#earth {
+    /* Style your earth */
+    position:absolute;
+    top:25%;
+    left: 25%;
+    
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+    border-width:2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+}
+
+#earth-orbit { position:absolute;
+    top:25%;
+    left: 25%;
+    
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+    
+    border-width:2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    /* For Section #2 */
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  }
+
+#earth-orbit {
+   /* ... your other orbit styles ... */
+
+  -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+    </style>
+    
+    <body>
+        <!-- Right below is an image of the sun -->
+        <img id="sun" src="http://goo.gl/dEEssP">
+        
+        <!-- Insert the 'earth' on the next line -->
+        <img id="earth" src="http://goo.gl/o3YWu9">
+        
+    </body>
+</html>
